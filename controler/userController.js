@@ -1,9 +1,9 @@
 const express = require("express");
-const db = require("./db");
+const db = require("../db");
 const bodyParser = require("body-parser"); // Import body-parser
 
 const app = express();
-app.use(bodyParser.json()); // Enable JSON request body parsing
+
 
 const bcrypt = require("bcrypt");
 
@@ -95,4 +95,4 @@ app.post("/register", async (req, res) => {
     }
   });
 
-  module.exports = router;
+  module.exports = app;
