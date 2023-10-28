@@ -8,7 +8,7 @@ const bcrypt = require("bcrypt");
 
 app.get("/blogs", async (req, res) => {
     try {
-      const query = "SELECT id, author_name, title, content FROM Blogs";
+      const query = "SELECT * FROM Blogs";
       const result = await db.query(query);
       res.json(result.rows);
     } catch (error) {
@@ -43,7 +43,7 @@ app.get("/blogs", async (req, res) => {
   
       // Query the database to fetch the blog with the specified ID
       const query =
-        "SELECT id, author_name, title, content FROM Blogs WHERE id = $1";
+        "SELECT * FROM Blogs WHERE id = $1";
       const values = [blogId];
   
       const result = await db.query(query, values);
