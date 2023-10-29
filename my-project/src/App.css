@@ -1,0 +1,196 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* navbar.css */
+#navbar
+{
+  width: 119rem;
+}
+/* BlogForm.css */
+
+.BlogForm {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 70rem;
+  height: 40rem;
+  margin: 0 auto;
+}
+
+.BlogForm h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.BlogForm label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.BlogForm input[type="text"],
+.BlogForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.BlogForm button {
+  background-color: rgb(40, 39, 39);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.BlogForm button:hover {
+  background-color: rgb(80, 80, 80);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .BlogForm {
+    width: 60rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .BlogForm {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .BlogForm {
+    width: 100%;
+  }
+  .bf {
+    margin: 2rem;
+  }
+}
+
+#input-blog {
+  border-radius: 3rem;
+  width: 100%;
+  padding: 10px;
+}
+
+.App-logo{
+  font-size: large;
+  color: black;
+  
+}
+
+
+/* HeroSection.css */
+
+.hero-section {
+  background-image: url('https://lp-cms-production.imgix.net/image_browser/jordan-treasury-shutterstockRF_169816541.jpg?auto=format&q=75'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  height: 50rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 18rem;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 28px;
+    margin-top: 12rem;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+    margin-top: 8rem;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 20px;
+    margin-top: 6rem;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+}
+
+ 

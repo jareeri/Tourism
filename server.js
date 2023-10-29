@@ -1,8 +1,10 @@
 const express = require("express");
 const db = require("./db");
 const bodyParser = require("body-parser"); // Import body-parser
+const cors = require('cors');
 
 const app = express();
+app.use(cors()); // This enables CORS for all routes
 app.use(bodyParser.json()); // Enable JSON request body parsing
 
 const bcrypt = require("bcrypt");
